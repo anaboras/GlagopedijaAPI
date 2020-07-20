@@ -1,0 +1,21 @@
+{
+    "name": "restfour-php/p3restapi",
+    "description": "Primjer kreiranja REST API za potrebe kolegija Programiranje 3.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "RESTfour"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Glagopedija\\": "src/Glagopedija"
+        }
+    },
+    "require": {
+        "doctrine/orm": "*",
+        "symfony/serializer": "*",
+        "symfony/property-access": "*",
+        "mikecao/flight": "^1.3"
+    }
+}
