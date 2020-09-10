@@ -6,10 +6,12 @@ namespace Glagopedija;
  **/
 class KategorijaJezik
 {
-    /** @Id @Column(type="integer") @GeneratedValue  **/
+
+	
+    /** @Id @Column(type="integer")  **/
     protected $kategorija;
 
-    /** @Column(type="string") **/
+    /** @Id @Column(type="string") **/
     protected $jezik;
     
     /** @Column(type="string") **/

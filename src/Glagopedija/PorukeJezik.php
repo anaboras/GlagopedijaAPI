@@ -6,11 +6,16 @@ namespace Glagopedija;
  **/
 class PorukeJezik
 {
-    /** @Id @Column(type="string") @GeneratedValue  **/
+    /** @Id @Column(type="string")  **/
     protected $poruka;
 
-    /** @Column(type="string") **/
-    protected $jezik;
+    /** @Id @Column(type="string") **/
+	protected $jezik;
+	
+	/** @Column(type="string") **/
+	protected $vrijednost;
+	
+	
     
     public function getPoruka(){
 		return $this->poruka;
@@ -26,6 +31,14 @@ class PorukeJezik
 
 	public function setJezik($jezik){
 		$this->jezik = $jezik;
+	}
+
+	public function getVrijednost(){
+		return $this->vrijednost;
+	}
+
+	public function setVrijednost($vrijednost){
+		$this->vrijednost = $vrijednost;
 	}
 
 
